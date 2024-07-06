@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Gracelyn!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-bottom: 100px; /* Add padding to the bottom to avoid footer overlap */
+            position: relative; /* Ensure position relative for absolute child */
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+            height: auto;
+        }
+        .birthday-wishes {
+            background-color: #ffebcd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .reactions {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: center;
+        }
+        .reaction-button {
+            background-color: #4CAF50; /* Change color to green */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .reaction-button:hover {
+            background-color: #45a049; /* Darker green for hover */
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday, Gracelyn Tomack!</h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Dear Gracelyn,</h2>
+            <p>On this special day, I want to let you know how much you mean to me. Your smile brightens my day, and your presence makes everything better. Happy Birthday!</p>
+        </div>
+
+        <div class="gallery">
+            <img src="buki.jpg" alt="Buki">
+            <img src="melo.jpg" alt="melo">
+            <img src="lolo.jpg" alt="lolo 1">
+        </div>
+
+        <div class="birthday-wishes">
+            <h3>Birthday Wishes</h3>
+            <p>Dear Gracelyn, On your special day, I want to remind you how much you mean to me. Your love lights up my life and your smile makes everything better. I'm grateful for every moment we share. Happy Birthday, my love! - Sebastian</p>
+        </div>
+
+        <div class="reactions">
+            <button class="reaction-button" onclick="react('heart')">❤️ Heart</button>
+            <button class="reaction-button" onclick="react('gift')">🎁 Gift</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Sebastian Uva Jr (Your BBBBFFF)</p>
+    </footer>
+
+    <script>
+        function react(reaction) {
+            alert('You reacted with a ' + reaction + '!');
+        }
+    </script>
+</body>
+</html>
